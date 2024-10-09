@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  worker-template:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - FLASK_ENV=production
+    container_name: runpod-worker-template
